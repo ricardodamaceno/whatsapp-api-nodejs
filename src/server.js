@@ -20,7 +20,7 @@ if (config.mongoose.enabled) {
 
 server = app.listen(config.port, async () => {
     logger.info(`Listening on port ${config.port}`)
-    global.mongoClient = await connectToCluster(config.mongoose.url)
+    //global.mongoClient = await connectToCluster(config.mongoose.url)
     if (config.restoreSessionsOnStartup) {
         logger.info(`Restoring Sessions`)
         const session = new Session()
