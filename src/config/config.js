@@ -24,6 +24,7 @@ const CLIENT_VERSION = process.env.CLIENT_VERSION || '4.0.0'
 const MONGODB_ENABLED = !!(
     process.env.MONGODB_ENABLED && process.env.MONGODB_ENABLED === 'true'
 )
+
 // URL of the Mongo DB
 const MONGODB_URL =
     process.env.MONGODB_URL || 'mongodb://127.0.0.1:27017/WhatsAppInstance'
